@@ -1,0 +1,17 @@
+<nav class="todo-sidebar todo-red todo-collapse todo-top todo-large todo-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    
+      <div class="todo-container">
+        <h3 class="todo-padding-64"><b><br></b></h3>
+      </div>
+      <div class="todo-bar-block">
+          <a class="todo-bar-item todo-button todo-hover-white" (click) = "onClickAllTasks()">All Tasks</a> 
+        <div *ngFor = "let category of categories let indexCategory = index"> 
+          <a class="todo-bar-item todo-button todo-hover-white" (click) = "onClickCategory(indexCategory)">{{category.name}}</a> 
+        </div>
+        <br>
+        <a class="todo-bar-item todo-button todo-hover-white" (click) = "addCategory()"> + Add Category</a>       
+        <input [hidden] = "!pressAddCategory" id="addCategoryTxt" type = "text" class = "addCategoryTxt"/>
+        <button [hidden] = "!pressAddCategory" (click)= "add()" class = "btnAdd">Add</button>
+        <button [hidden] = "!pressAddCategory" (click) = "cancle()" class="btnCancle">Cancle</button>
+      </div>
+  </nav>

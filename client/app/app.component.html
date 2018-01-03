@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<body>
+
+<!-- Sidebar/menu -->
+<side-bar [categories] = "categories" [currentCategory] = "currentCategory" [nameRegularTask] = "nameRegularTask" (onCategoryChanged) = "onCategoryChanged($event)"></side-bar>
+
+<div class="todo-main" >
+  <!-- Header -->
+  <div class="todo-container" style="margin-top:80px" id="showcase">
+    <h1 class="todo-jumbo" ><b>To Do List   </b><img class = "check" src="app/images/check.jpg" alt="">
+    </h1>
+  <todo-list [categories] = "categories" [currentCategory] = "currentCategory"></todo-list>
+   
+  </div>
+</div>
+
+</body>
+</html>

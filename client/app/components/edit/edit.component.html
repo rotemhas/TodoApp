@@ -1,0 +1,5 @@
+
+<input type = "text" [hidden]="!edit[i]" [value]="task.title" id = "textTodo" class = "textTodo"/>
+<br [hidden] = "!edit[i]"><br [hidden] = "!edit[i]">
+<button  class = "todo-red todo-button todo-hover-grey" [hidden]="!edit[i]" (click) = "onClickSave(i)" >Save</button>
+<button class = "todo-red todo-button todo-hover-grey"  [hidden]="!edit[i]" (click) = "onClickCancle(i)" >Cancle</button>

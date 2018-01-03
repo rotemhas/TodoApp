@@ -1,0 +1,65 @@
+
+@media (max-width:600px){.todo-modal-content{margin:0 10px;width:auto!important}.todo-modal{padding-top:30px}
+.todo-dropdown-hover.todo-mobile,.todo-dropdown-hover.todo-mobile .todo-btn,.todo-dropdown-hover.todo-mobile .todo-button,.todo-dropdown-click.todo-mobile,.todo-dropdown-click.todo-mobile .todo-btn,.todo-dropdown-click.todo-mobile .todo-button{width:100%}}
+@media (min-width:993px){.todo-modal-content{width:900px}.todo-hide-large{display:none!important}.todo-sidebar.todo-collapse{display:block!important}}
+.todo-bar-block .todo-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;outline:none;white-space:normal;float:none}
+.todo-top,.todo-bottom{position:fixed;width:100%;z-index:1}.todo-top{top:0}.todo-bottom{bottom:0}
+.todo-tiny{font-size:10px!important}.todo-small{font-size:12px!important}.todo-medium{font-size:15px!important}.todo-large{font-size:18px!important}
+.todo-tooltip,.todo-display-container{position:relative}.todo-tooltip .todo-text{display:none}.todo-tooltip:hover .todo-text{display:inline-block}
+.todo-xlarge{font-size:24px!important}.todo-xxlarge{font-size:36px!important}.todo-xxxlarge{font-size:48px!important}.todo-jumbo{font-size:64px!important}
+.todo-white,.todo-hover-white:hover{color:#000!important;background-color:#fff!important}
+.todo-red,.todo-hover-red:hover{color:#fff!important;background-color:#FF0000!important}
+.todo-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.todo-main,#main{transition:margin-left .4s}
+.todo-display-topleft{position:absolute;left:0;top:0}.todo-display-topright{position:absolute;right:0;top:0}
+.todo-white,.todo-hover-grey:hover{color:#000!important;background-color:#ccc!important}
+
+/* Buttons */
+.todo-btn,.todo-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.todo-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.todo-btn,.todo-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.todo-disabled,.todo-btn:disabled,.todo-button:disabled{cursor:not-allowed;opacity:0.3}.todo-disabled *,:disabled *{pointer-events:none}
+.todo-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+.addCategoryTxt{
+    position: relative;
+    margin-top: 10;
+    left: 8px;
+    padding:8px;
+    border:none;
+    border-bottom:1px solid #ccc;
+    width:95%;
+    color: black;
+}
+
+.btnAdd{
+    position: relative;
+    left: 8px;
+    color: black;
+}
+
+.btnAdd:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btnCancle{
+    position: relative;
+    left: 7px;
+    color: black;
+}
+
+.btnCancle:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.todo-main{
+    margin-left:340px;margin-right:40px;
+}
+
+.check{
+    width: 10%;
+    height: 10%;
+}

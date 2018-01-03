@@ -1,0 +1,8 @@
+.category{
+    cursor: pointer;
+    position: absolute;
+   margin-top: -32px;
+    right: 110px;
+    font-size: 13;
+    color: #A1A1A1;
+}

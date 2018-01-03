@@ -1,0 +1,5 @@
+<img src="app/images/3dots.png" class = "dots" (click) = "onclickMenu(index)">
+<div class="dropdown-content" [attr.id]="'dropdown' + index">
+    <a class = "dropdown-button" (click) = "editToDo(index)">Edit</a>
+    <a class = "dropdown-button" (click) = "deleteToDo(index)">Delete</a>
+</div>

@@ -1,0 +1,9 @@
+<label class = "category" (click) = "onClickCategory(i)">{{task.category}}</label>   
+
+<div class="dropdown-content" [attr.id]="'categoryDrop' + i">
+        <a class = "dropdown-button" (click) = "chooseRegular(task)">{{nameRegularTask}}</a>
+        <div *ngFor = "let category of categories let indexCategory = index">
+                <a class = "dropdown-button" (click) = "changeCategory(task,indexCategory)">{{category.name}}</a>                        
+        </div>
+    </div>
+ <hr>

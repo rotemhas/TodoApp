@@ -1,0 +1,16 @@
+.dots{
+    width: 13;
+    height: 13;
+    position: absolute;
+    margin-top: -30; /* for relative positioning */
+    right: 80px;
+    cursor: pointer;
+}
+
+.category{
+    position: absolute;
+    margin-top: 30;
+    right: 110px;
+    font-size: 13;
+    color: #A1A1A1;
+}

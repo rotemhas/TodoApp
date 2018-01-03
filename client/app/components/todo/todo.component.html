@@ -1,0 +1,31 @@
+
+<h2>Add Task</h2>
+<form>
+    
+    <input type="text" class = "addTodoTxt" [(ngModel)]="title" name="title" #todo>
+    <button (click)="addTask($event)" class = "todo-red todo-button todo-hover-grey">Add</button>
+</form>
+<button (click) = "clearCompleted()" class = "todo-red todo-button todo-hover-grey">Clear Completed </button>
+<br><br>
+<div [ngClass]="{'todoDiv': edit[i] }" *ngFor = "let task of tasks; let i = index" >
+        <!-- ======== TASK ======= -->
+        <div *ngIf = "task.category === currentCategory ||  currentCategory === nameRegularTask">
+            <label [ngClass]="task.done?'done':''"  name = "done" >
+                    <input type="checkbox" [checked] = "task.done" class = "todo-check" (change) = "updateStatus(task)"/>
+                    <a class = "todoTitle" [hidden] = "edit[i]"> {{task.title}} </a>
+                    <!-- EDIT -->
+                 <edit-bar [edit]="edit" [task] = "task" [i] = "i" [tasks] = "tasks"></edit-bar> 
+            </label>
+          
+
+         <!-- MENU --> 
+        <menu [index] = "i" [tasks] = "tasks" [edit] = "edit"></menu> 
+         
+        <!-- DROP DOWN CATEGORIES -->
+        
+            <drop-down-categories [nameRegularTask] = "nameRegularTask" [task] = "task" 
+            [categories] = "categories" [i] = "i" [tasks] = "tasks">
+            </drop-down-categories>
+
+        </div>
+</div>
